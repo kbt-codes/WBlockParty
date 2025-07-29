@@ -1,0 +1,198 @@
+# ===========================================
+# WBlockParty - Configurações da Arena
+# ===========================================
+# Este arquivo contém todas as configurações relacionadas à arena
+
+# ===========================================
+# CONFIGURAÇÕES GERAIS DA ARENA
+# ===========================================
+
+# Padrão do piso da arena
+# Opções: RANDOM, MULTICOLOR_CHECKER, HORIZONTAL_STRIPES, VERTICAL_STRIPES, CIRCLES, SPIRAL, ROWS
+floor-pattern: RANDOM
+
+# Tamanho da arena (em blocos) - deve ser ímpar
+arena-size: 37
+
+# Altura da arena (em blocos) - distância do chão
+arena-height: 1
+
+# ===========================================
+# BLOCOS DISPONÍVEIS
+# ===========================================
+
+# Blocos disponíveis para o jogo
+available-blocks:
+  - "WHITE_TERRACOTTA"
+  - "RED_TERRACOTTA"
+  - "BLUE_TERRACOTTA"
+  - "GREEN_TERRACOTTA"
+  - "YELLOW_TERRACOTTA"
+  - "PURPLE_TERRACOTTA"
+  - "ORANGE_TERRACOTTA"
+  - "PINK_TERRACOTTA"
+  - "LIME_TERRACOTTA"
+
+# ===========================================
+# CONFIGURAÇÕES DE PADRÕES
+# ===========================================
+
+patterns:
+  # Configurações para padrão RANDOM
+  random:
+    # Número mínimo de cores diferentes
+    min-colors: 3
+    
+    # Número máximo de cores diferentes
+    max-colors: 9
+    
+    # Chance de usar todas as cores (0.0 a 1.0)
+    use-all-colors-chance: 0.3
+  
+  # Configurações para padrão MULTICOLOR_CHECKER
+  multicolor-checker:
+    # Tamanho do quadrado (em blocos)
+    square-size: 2
+    
+    # Usar cores alternadas
+    alternate-colors: true
+  
+  # Configurações para padrão HORIZONTAL_STRIPES
+  horizontal-stripes:
+    # Largura das listras (em blocos)
+    stripe-width: 2
+    
+    # Usar cores alternadas
+    alternate-colors: true
+  
+  # Configurações para padrão VERTICAL_STRIPES
+  vertical-stripes:
+    # Largura das listras (em blocos)
+    stripe-width: 2
+    
+    # Usar cores alternadas
+    alternate-colors: true
+  
+  # Configurações para padrão CIRCLES
+  circles:
+    # Espessura dos círculos (em blocos)
+    circle-thickness: 2
+    
+    # Espaçamento entre círculos (em blocos)
+    circle-spacing: 1
+  
+  # Configurações para padrão SPIRAL
+  spiral:
+    # Espessura da espiral (em blocos)
+    spiral-thickness: 1
+    
+    # Densidade da espiral (0.1 a 2.0)
+    spiral-density: 1.0
+  
+  # Configurações para padrão ROWS
+  rows:
+    # Largura das linhas (em blocos)
+    row-width: 2
+    
+    # Usar cores alternadas
+    alternate-colors: true
+
+# ===========================================
+# CONFIGURAÇÕES DE SEGURANÇA
+# ===========================================
+
+safety:
+  # Distância mínima da borda da arena (em blocos)
+  min-edge-distance: 2
+  
+  # Altura mínima da arena (em blocos)
+  min-arena-height: 1
+  
+  # Altura máxima da arena (em blocos)
+  max-arena-height: 10
+  
+  # Verificar se a arena está dentro dos limites do mundo
+  check-world-bounds: true
+  
+  # Verificar se há blocos sólidos abaixo da arena
+  check-solid-ground: true
+  
+  # Verificar se há espaço suficiente para jogadores
+  check-player-space: true
+
+# ===========================================
+# CONFIGURAÇÕES DE PERFORMANCE
+# ===========================================
+
+performance:
+  # Habilitar otimização de renderização
+  optimize-rendering: true
+  
+  # Usar chunks para renderização
+  use-chunks: true
+  
+  # Tamanho do chunk para renderização
+  chunk-size: 16
+  
+  # Habilitar cache de blocos
+  cache-blocks: true
+  
+  # Tempo de cache (em ticks)
+  cache-time: 100
+
+# ===========================================
+# CONFIGURAÇÕES DE EFEITOS
+# ===========================================
+
+effects:
+  # Habilitar partículas quando blocos são removidos
+  block-removal-particles: true
+  
+  # Tipo de partícula para remoção de blocos
+  removal-particle: "BLOCK_CRACK"
+  
+  # Quantidade de partículas por bloco
+  particles-per-block: 5
+  
+  # Habilitar efeitos sonoros de blocos
+  block-sounds: true
+  
+  # Volume dos sons de blocos (0.0 a 1.0)
+  block-sound-volume: 0.3
+
+# ===========================================
+# CONFIGURAÇÕES DE BACKUP
+# ===========================================
+
+backup:
+  # Habilitar backup automático da arena
+  auto-backup: true
+  
+  # Intervalo de backup (em minutos)
+  backup-interval: 30
+  
+  # Manter backups por (em dias)
+  keep-backups-days: 7
+  
+  # Máximo de backups mantidos
+  max-backups: 10
+
+# ===========================================
+# CONFIGURAÇÕES AVANÇADAS
+# ===========================================
+
+advanced:
+  # Habilitar modo de teste da arena
+  test-mode: false
+  
+  # Mostrar informações de debug da arena
+  debug-info: false
+  
+  # Habilitar validação rigorosa da arena
+  strict-validation: true
+  
+  # Habilitar otimização automática
+  auto-optimize: true
+  
+  # Usar algoritmos avançados de geração
+  advanced-algorithms: true 

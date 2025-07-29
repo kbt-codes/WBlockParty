@@ -1,0 +1,168 @@
+# ===========================================
+# WBlockParty - Sons e Música
+# ===========================================
+# Este arquivo contém todas as configurações de sons do plugin
+
+# ===========================================
+# CONFIGURAÇÕES GERAIS DE SOM
+# ===========================================
+
+# Habilitar sons de notificação
+enabled: true
+
+# Volume geral dos sons (0.0 a 1.0)
+volume: 1.0
+
+# Pitch geral dos sons (0.5 a 2.0)
+pitch: 1.0
+
+# ===========================================
+# SONS DE JOGADORES
+# ===========================================
+
+players:
+  # Som quando um jogador entra no jogo
+  join: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som quando um jogador sai do jogo
+  leave: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som quando um jogador é eliminado
+  eliminated: "ENTITY_PLAYER_DEATH"
+  
+  # Som quando um jogador vence
+  victory: "ENTITY_PLAYER_LEVELUP"
+
+# ===========================================
+# SONS DE JOGO
+# ===========================================
+
+game:
+  # Som quando a partida inicia
+  start: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som quando a partida termina
+  end: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som quando um bloco é mostrado
+  block-show: "BLOCK_NOTE_BLOCK_PLING"
+  
+  # Som quando blocos são removidos
+  block-remove: "BLOCK_GLASS_BREAK"
+  
+  # Som de countdown
+  countdown: "BLOCK_NOTE_BLOCK_PLING"
+  
+  # Som de aviso
+  warning: "BLOCK_NOTE_BLOCK_BASS"
+
+# ===========================================
+# SONS DE COMANDOS
+# ===========================================
+
+commands:
+  # Som quando um comando é executado com sucesso
+  success: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som quando um comando falha
+  error: "ENTITY_VILLAGER_NO"
+  
+  # Som quando uma permissão é negada
+  no-permission: "ENTITY_VILLAGER_NO"
+
+# ===========================================
+# CONFIGURAÇÕES DE MÚSICA
+# ===========================================
+
+music:
+  # Habilitar música durante o jogo
+  enabled: true
+  
+  # Volume da música (0.0 a 1.0)
+  volume: 0.8
+  
+  # Pitch da música (0.5 a 2.0)
+  pitch: 1.0
+  
+  # Configurações para arenas grandes
+  large-arena:
+    # Multiplicador de volume para arenas grandes (1.0 = sem alteração, 2.0 = dobro)
+    volume-multiplier: 2.0
+    
+    # Tamanho mínimo para considerar uma arena como "grande"
+    min-size: 50
+  
+  # Discos disponíveis para tocar
+  available-discs:
+    - "MUSIC_DISC_CAT"
+    - "MUSIC_DISC_BLOCKS"
+    - "MUSIC_DISC_CHIRP"
+    - "MUSIC_DISC_FAR"
+    - "MUSIC_DISC_MALL"
+    - "MUSIC_DISC_MELLOHI"
+    - "MUSIC_DISC_STAL"
+    - "MUSIC_DISC_STRAD"
+    - "MUSIC_DISC_WARD"
+    - "MUSIC_DISC_WAIT"
+    - "MUSIC_DISC_PIGSTEP"
+    - "MUSIC_DISC_OTHERSIDE"
+    - "MUSIC_DISC_RELIC"
+    - "MUSIC_DISC_CREATOR"
+    - "MUSIC_DISC_CREATOR_MUSIC_BOX"
+
+# ===========================================
+# SONS DE AMBIENTE
+# ===========================================
+
+ambient:
+  # Som de fundo no lobby
+  lobby: "AMBIENT_CAVE"
+  
+  # Som de fundo na arena
+  arena: "AMBIENT_CAVE"
+  
+  # Som de transição
+  transition: "BLOCK_PORTAL_TRIGGER"
+
+# ===========================================
+# SONS DE NOTIFICAÇÃO
+# ===========================================
+
+notifications:
+  # Som de notificação geral
+  general: "BLOCK_NOTE_BLOCK_PLING"
+  
+  # Som de alerta
+  alert: "BLOCK_NOTE_BLOCK_BASS"
+  
+  # Som de sucesso
+  success: "ENTITY_PLAYER_LEVELUP"
+  
+  # Som de erro
+  error: "ENTITY_VILLAGER_NO"
+  
+  # Som de informação
+  info: "BLOCK_NOTE_BLOCK_CHIME"
+
+# ===========================================
+# CONFIGURAÇÕES AVANÇADAS
+# ===========================================
+
+advanced:
+  # Habilitar sons 3D (posição do jogador)
+  spatial-sound: true
+  
+  # Distância máxima para sons 3D
+  max-distance: 32.0
+  
+  # Habilitar fade de som
+  fade-enabled: false
+  
+  # Duração do fade (em ticks)
+  fade-duration: 20
+  
+  # Habilitar crossfade entre músicas
+  crossfade: false
+  
+  # Duração do crossfade (em ticks)
+  crossfade-duration: 40 

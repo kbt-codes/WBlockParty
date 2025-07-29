@@ -1,0 +1,192 @@
+# ===========================================
+# ⚠️  AVISO IMPORTANTE  ⚠️
+# ===========================================
+# 
+# ESTE ARQUIVO CONTÉM DADOS DO PLUGIN
+# 
+# ⚠️  NÃO MODIFIQUE ESTE ARQUIVO MANUALMENTE!  ⚠️
+# 
+# Modificações manuais podem:
+# - Corromper os dados do plugin
+# - Causar erros no funcionamento
+# - Perder informações dos jogadores
+# - Quebrar o plugin completamente
+# 
+# Se você precisa alterar configurações, use:
+# - config.yml (configurações gerais)
+# - messages.yml (mensagens)
+# - sounds.yml (sons)
+# - scoreboard.yml (scoreboard)
+# - arena.yml (arena)
+# 
+# ===========================================
+# INFORMAÇÕES DO SISTEMA
+# ===========================================
+# 
+# Este arquivo é gerenciado automaticamente pelo plugin
+# Última modificação: {timestamp}
+# Versão do plugin: {version}
+# 
+# ===========================================
+# DADOS DOS JOGADORES
+# ===========================================
+
+players:
+  # Estatísticas dos jogadores
+  # Formato: UUID -> dados
+  # Exemplo:
+  # "uuid-exemplo":
+  #   name: "JogadorExemplo"
+  #   wins: 5
+  #   games: 20
+  #   total-time: 3600
+  #   last-played: 1234567890
+  #   achievements: []
+  
+  # Dados serão adicionados automaticamente aqui
+
+# ===========================================
+# DADOS DO JOGO
+# ===========================================
+
+game:
+  # Estatísticas gerais do jogo
+  total-games: 0
+  total-players: 0
+  total-time: 0
+  
+  # Recordes
+  record-players: 0
+  record-time: 0
+  record-rounds: 0
+  
+  # Última partida
+  last-game:
+    winner: null
+    players: 0
+    duration: 0
+    rounds: 0
+    timestamp: 0
+
+# ===========================================
+# LOCALIZAÇÕES SALVAS
+# ===========================================
+
+locations:
+  # Lobby
+  lobby:
+    world: null
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  
+  # Arena
+  arena:
+    name: "default"
+    p1:
+      world: null
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    p2:
+      world: null
+      x: 0.0
+      y: 0.0
+      z: 0.0
+  
+  # Espectador
+  spectator:
+    world: null
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  
+  # Placa de entrada
+  join-sign:
+    world: null
+    x: 0.0
+    y: 0.0
+    z: 0.0
+
+# ===========================================
+# CONFIGURAÇÕES SALVAS
+# ===========================================
+
+saved-config:
+  # Configurações que foram alteradas durante a execução
+  # e precisam ser preservadas entre reinicializações
+  
+  # Última configuração usada
+  last-used: "default"
+  
+  # Configurações personalizadas
+  custom: {}
+
+# ===========================================
+# LOGS E HISTÓRICO
+# ===========================================
+
+logs:
+  # Log de eventos importantes
+  events: []
+  
+  # Log de erros
+  errors: []
+  
+  # Log de performance
+  performance: []
+
+# ===========================================
+# CACHE E TEMPORÁRIOS
+# ===========================================
+
+cache:
+  # Cache de scoreboards
+  scoreboards: {}
+  
+  # Cache de mensagens
+  messages: {}
+  
+  # Cache de sons
+  sounds: {}
+  
+  # Timestamp de limpeza
+  cleanup-timestamp: 0
+
+# ===========================================
+# METADADOS DO ARQUIVO
+# ===========================================
+
+metadata:
+  # Versão do formato de dados
+  version: "1.0"
+  
+  # Data de criação
+  created: 0
+  
+  # Última modificação
+  last-modified: 0
+  
+  # Checksum para verificação de integridade
+  checksum: ""
+  
+  # Backup automático
+  auto-backup: true
+  
+  # Compressão de dados
+  compressed: false
+
+# ===========================================
+# ⚠️  FIM DO AVISO  ⚠️
+# ===========================================
+# 
+# Lembre-se: NÃO MODIFIQUE ESTE ARQUIVO MANUALMENTE!
+# 
+# Para suporte, consulte a documentação do plugin
+# ou entre em contato com o desenvolvedor.
+# 
+# =========================================== 

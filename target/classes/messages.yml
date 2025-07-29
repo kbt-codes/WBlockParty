@@ -1,0 +1,193 @@
+# ===========================================
+# WBlockParty - Mensagens
+# ===========================================
+# Este arquivo contém todas as mensagens do plugin
+# Use {placeholder} para variáveis dinâmicas
+
+# ===========================================
+# CONFIGURAÇÕES DE MENSAGENS
+# ===========================================
+
+# Prefixo das mensagens do plugin
+prefix: "§6[BlockParty] §r"
+
+# Cores das mensagens
+colors:
+  success: "§a"
+  error: "§c"
+  info: "§e"
+  warning: "§6"
+  highlight: "§6"
+
+# ===========================================
+# MENSAGENS DO JOGO
+# ===========================================
+
+game:
+  # Mensagens de início/fim
+  start: "§aPartida iniciada!"
+  end: "§cPartida finalizada!"
+  winner: "§6🏆 {player} VENCEU O BLOCKPARTY! 🏆"
+  no-winner: "§ePartida finalizada sem vencedor!"
+  game-finished: "§aBlockParty finalizado! Use /blockparty join para jogar novamente."
+  
+  # Mensagens de jogadores
+  join: "§a{player} entrou no BlockParty! ({current}/{max})"
+  leave: "§c{player} saiu do BlockParty."
+  eliminated: "§cVocê caiu! Você foi eliminado!"
+  
+  # Mensagens de validação
+  not-enough-players: "§cÉ necessário pelo menos {min} jogadores para iniciar!"
+  arena-not-configured: "§cA arena não está configurada!"
+  lobby-full: "§cA sala está cheia!"
+  already-in-game: "§eVocê já está na partida."
+  not-in-game: "§eVocê não está em uma partida."
+  game-in-progress: "§cA partida já está em andamento!"
+  waiting-players: "§eJogadores insuficientes. Aguardando mais jogadores..."
+  
+  # Mensagens de countdown
+  countdown: "§eA partida começa em §a{time}§e segundos!"
+  block-removal-warning: "§cOs blocos errados serão removidos em {time}..."
+  block-removal: "§cOs blocos errados foram removidos!"
+  
+  # Mensagens de pausa
+  paused: "§eJogo pausado temporariamente."
+  resumed: "§eJogo retomado!"
+  
+  # Mensagens de tempo
+  time-limit: "§cTempo máximo de jogo atingido! Finalizando partida..."
+
+# ===========================================
+# MENSAGENS DE TÍTULO
+# ===========================================
+
+title:
+  victory: "§6🏆 VITÓRIA! 🏆"
+  victory-subtitle: "§aVocê venceu o BlockParty!"
+  block-target: "§6§l{block}"
+  block-subtitle: "§eFique neste bloco para sobreviver!"
+  countdown: "§e{time}"
+  countdown-subtitle: "§cSegundos restantes!"
+
+# ===========================================
+# MENSAGENS DE COMANDOS
+# ===========================================
+
+commands:
+  # Comandos gerais
+  no-permission: "§cVocê não tem permissão para usar este comando!"
+  player-only: "§cEste comando só pode ser usado por jogadores!"
+  usage: "§eUso: /blockparty <subcomando>"
+  
+  # Subcomandos
+  start:
+    success: "§aPartida iniciada com sucesso!"
+    already-running: "§cA partida já está em andamento!"
+    not-enough-players: "§cNão há jogadores suficientes para iniciar!"
+    no-arena: "§cArena não configurada!"
+  
+  stop:
+    success: "§aPartida parada com sucesso!"
+    not-running: "§cNão há partida em andamento!"
+  
+  join:
+    success: "§aVocê entrou no BlockParty!"
+    already-in: "§eVocê já está na partida!"
+    lobby-full: "§cA sala está cheia!"
+    game-in-progress: "§cA partida já está em andamento!"
+  
+  leave:
+    success: "§aVocê saiu do BlockParty!"
+    not-in: "§eVocê não está em uma partida!"
+  
+  setlobby:
+    success: "§aLobby configurado com sucesso!"
+    usage: "§eUso: /blockparty setlobby"
+  
+  setarena:
+    success: "§aArena configurada com sucesso!"
+    usage: "§eUso: /blockparty setarena <nome>"
+  
+  setspectator:
+    success: "§aLocalização de espectador configurada!"
+    usage: "§eUso: /blockparty setspectator"
+  
+  setsign:
+    success: "§aPlaca de entrada configurada!"
+    usage: "§eUso: /blockparty setsign"
+  
+  help:
+    title: "§6§l=== BlockParty Help ==="
+    commands:
+      - "§e/blockparty join §7- Entrar no jogo"
+      - "§e/blockparty leave §7- Sair do jogo"
+      - "§e/blockparty start §7- Iniciar partida"
+      - "§e/blockparty stop §7- Parar partida"
+      - "§e/blockparty setlobby §7- Configurar lobby"
+      - "§e/blockparty setarena §7- Configurar arena"
+      - "§e/blockparty setspectator §7- Configurar espectador"
+      - "§e/blockparty setsign §7- Configurar placa"
+      - "§e/blockparty help §7- Mostrar esta ajuda"
+
+# ===========================================
+# MENSAGENS DE ERRO
+# ===========================================
+
+errors:
+  # Erros gerais
+  internal: "§cErro interno do plugin!"
+  config-load: "§cErro ao carregar configuração!"
+  data-load: "§cErro ao carregar dados!"
+  data-save: "§cErro ao salvar dados!"
+  
+  # Erros de localização
+  invalid-location: "§cLocalização inválida!"
+  world-not-found: "§cMundo não encontrado!"
+  teleport-failed: "§cFalha ao teleportar!"
+  
+  # Erros de arena
+  arena-invalid: "§cArena inválida!"
+  arena-too-small: "§cArena muito pequena!"
+  arena-too-big: "§cArena muito grande!"
+
+# ===========================================
+# MENSAGENS DE DEBUG
+# ===========================================
+
+debug:
+  # Mensagens de debug
+  config-loaded: "Configuração carregada com sucesso!"
+  data-loaded: "Dados carregados com sucesso!"
+  arena-created: "Arena criada: {name}"
+  player-added: "Jogador adicionado: {player}"
+  player-removed: "Jogador removido: {player}"
+  game-started: "Jogo iniciado com {players} jogadores"
+  game-ended: "Jogo finalizado. Vencedor: {winner}"
+  
+  # Mensagens de performance
+  performance-warning: "Performance baixa detectada!"
+  memory-warning: "Uso de memória alto!"
+  task-slow: "Task lenta detectada: {task}"
+
+# ===========================================
+# MENSAGENS DE PLACA
+# ===========================================
+
+signs:
+  join:
+    - "§6[BlockParty]"
+    - "§eClique para"
+    - "§eEntrar!"
+    - "§fJogadores: §a{current}§7/§c{max}"
+  
+  waiting:
+    - "§6[BlockParty]"
+    - "§eAguardando"
+    - "§eJogadores"
+    - "§f{current}/{max}"
+  
+  in-progress:
+    - "§6[BlockParty]"
+    - "§cPartida em"
+    - "§cAndamento"
+    - "§f{players} vivos" 

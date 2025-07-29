@@ -1,0 +1,177 @@
+# ===========================================
+# WBlockParty - Scoreboard
+# ===========================================
+# Este arquivo contém todas as configurações do scoreboard
+
+# ===========================================
+# CONFIGURAÇÕES GERAIS
+# ===========================================
+
+# Habilitar scoreboard
+enabled: true
+
+# Intervalo de atualização do scoreboard (em ticks)
+update-interval: 20
+
+# ===========================================
+# SCOREBOARD DO LOBBY
+# ===========================================
+
+lobby:
+  # Título do scoreboard
+  title: "§6§lBLOCKPARTY"
+  
+  # Linhas do scoreboard (de baixo para cima)
+  lines:
+    - "§7-----------------"
+    - "§fJogadores Online"
+    - "§a{players}§7/§c{max}"
+    - "§e"
+    - "§fMínimo para Iniciar"
+    - "§a{min} jogadores"
+    - "§e"
+    - "§fStatus"
+    - "§aAguardando..."
+    - "§7-----------------"
+  
+  # Cores personalizadas
+  colors:
+    title: "§6§l"
+    separator: "§7"
+    players: "§a"
+    max: "§c"
+    min: "§a"
+    status: "§a"
+    waiting: "§e"
+
+# ===========================================
+# SCOREBOARD DA PARTIDA
+# ===========================================
+
+game:
+  # Título do scoreboard
+  title: "§6§lBLOCKPARTY"
+  
+  # Linhas do scoreboard (de baixo para cima)
+  lines:
+    - "§7-----------------"
+    - "§fRodada: §a{round}"
+    - "§fBloco: {block}"
+    - "§fTempo: §a{time}s"
+    - "§fVivos: §a{players}"
+    - "§fTempo Total: §a{total-time}"
+    - "§7-----------------"
+  
+  # Cores personalizadas
+  colors:
+    title: "§6§l"
+    separator: "§7"
+    round: "§a"
+    block: "§6"
+    time: "§a"
+    players: "§a"
+    total-time: "§a"
+
+# ===========================================
+# SCOREBOARD DE ESPECTADOR
+# ===========================================
+
+spectator:
+  # Título do scoreboard
+  title: "§6§lESPECTADOR"
+  
+  # Linhas do scoreboard
+  lines:
+    - "§7-----------------"
+    - "§fJogadores Vivos"
+    - "§a{players}"
+    - "§e"
+    - "§fRodada Atual"
+    - "§a{round}"
+    - "§e"
+    - "§fTempo Restante"
+    - "§a{time}s"
+    - "§7-----------------"
+  
+  # Cores personalizadas
+  colors:
+    title: "§6§l"
+    separator: "§7"
+    players: "§a"
+    round: "§a"
+    time: "§a"
+
+# ===========================================
+# SCOREBOARD DE ESTATÍSTICAS
+# ===========================================
+
+stats:
+  # Título do scoreboard
+  title: "§6§lESTATÍSTICAS"
+  
+  # Linhas do scoreboard
+  lines:
+    - "§7-----------------"
+    - "§fVitórias"
+    - "§a{wins}"
+    - "§e"
+    - "§fJogos Jogados"
+    - "§a{games}"
+    - "§e"
+    - "§fTempo Total"
+    - "§a{total-time}"
+    - "§7-----------------"
+  
+  # Cores personalizadas
+  colors:
+    title: "§6§l"
+    separator: "§7"
+    wins: "§a"
+    games: "§a"
+    total-time: "§a"
+
+# ===========================================
+# CONFIGURAÇÕES AVANÇADAS
+# ===========================================
+
+advanced:
+  # Habilitar animações no scoreboard
+  animations: false
+  
+  # Velocidade das animações (em ticks)
+  animation-speed: 10
+  
+  # Habilitar cores gradientes
+  gradients: false
+  
+  # Habilitar efeitos especiais
+  effects: false
+  
+  # Máximo de linhas por scoreboard
+  max-lines: 15
+  
+  # Comprimento máximo por linha
+  max-line-length: 32
+  
+  # Habilitar cache de scoreboard
+  cache: true
+  
+  # Tempo de cache (em ticks)
+  cache-time: 100
+
+# ===========================================
+# PLACEHOLDERS DISPONÍVEIS
+# ===========================================
+
+# Lista de placeholders que podem ser usados:
+# {players} - Número de jogadores atuais
+# {max} - Número máximo de jogadores
+# {min} - Número mínimo de jogadores
+# {round} - Rodada atual
+# {time} - Tempo restante da rodada
+# {total-time} - Tempo total do jogo
+# {block} - Bloco atual
+# {wins} - Vitórias do jogador
+# {games} - Jogos jogados pelo jogador
+# {status} - Status atual do jogo
+# {winner} - Nome do vencedor (quando aplicável) 

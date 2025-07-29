@@ -1,0 +1,106 @@
+# ===========================================
+# WBlockParty - Configuração Principal
+# ===========================================
+# Este arquivo contém as configurações principais do plugin
+# Para configurações específicas, veja os arquivos separados:
+# - messages.yml (Mensagens e textos)
+# - sounds.yml (Sons e música)
+# - scoreboard.yml (Configurações do scoreboard)
+# - arena.yml (Configurações da arena)
+# - data.yml (Dados do plugin - NÃO MODIFIQUE MANUALMENTE!)
+
+# ===========================================
+# CONFIGURAÇÕES GERAIS
+# ===========================================
+
+# Configurações básicas do jogo
+game:
+  # Número mínimo de jogadores para iniciar
+  min-players: 2
+  
+  # Número máximo de jogadores por partida
+  max-players: 20
+  
+  # Tempo de espera no lobby (em segundos)
+  lobby-timer: 30
+  
+  # Tempo base da rodada (em segundos)
+  round-base-time: 30
+  
+  # Tempo mínimo da rodada (em segundos)
+  round-min-time: 10
+  
+  # Tempo máximo de jogo (em segundos, 0 = sem limite)
+  max-game-time: 600
+  
+  # Delay para finalizar jogo (em segundos)
+  game-end-delay: 3
+  
+  # Intervalo para verificar jogadores caídos (em ticks)
+  fall-check-interval: 10
+
+# Configurações de debug
+debug:
+  # Habilitar logs de debug
+  enabled: false
+  
+  # Nível de debug (1-3)
+  level: 1
+
+# Configurações de performance
+performance:
+  # Intervalo de salvamento automático (em segundos)
+  auto-save-interval: 300
+  
+  # Limpar dados antigos automaticamente
+  auto-cleanup: true
+  
+  # Tempo para considerar dados antigos (em dias)
+  cleanup-days: 30
+
+# ===========================================
+# CONFIGURAÇÕES DE PERMISSÕES
+# ===========================================
+
+permissions:
+  # Permissão para comandos básicos
+  basic: "blockparty.basic"
+  
+  # Permissão para comandos de administrador
+  admin: "blockparty.admin"
+  
+  # Permissão para comandos de configuração
+  config: "blockparty.config"
+  
+  # Permissão para bypass de jogadores mínimos
+  bypass-min: "blockparty.bypass.min"
+  
+  # Permissão para bypass de jogadores máximos
+  bypass-max: "blockparty.bypass.max"
+
+# ===========================================
+# CONFIGURAÇÕES DE ARQUIVOS
+# ===========================================
+
+files:
+  # Habilitar arquivos separados
+  separate-files: true
+  
+  # Arquivo de mensagens
+  messages: "messages.yml"
+  
+  # Arquivo de sons
+  sounds: "sounds.yml"
+  
+  # Arquivo de scoreboard
+  scoreboard: "scoreboard.yml"
+  
+  # Arquivo de arena
+  arena: "arena.yml"
+  
+  # Arquivo de dados (NÃO MODIFIQUE)
+  data: "data.yml"
+
+
+
+

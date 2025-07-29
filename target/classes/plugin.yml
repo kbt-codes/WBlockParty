@@ -1,0 +1,44 @@
+name: WBlockParty
+version: Dev-1.0
+main: me.willowdev.blockparty.WBlockParty
+authors: [WillowDev]
+description: Minigame BlockParty simples para PaperMC 1.21.4
+api-version: 1.21
+commands:
+  blockparty:
+    description: Gerencia o minigame BlockParty.
+    usage: /blockparty <start|stop|join|leave|setlobby|setarena|setspectator|setsign>
+    aliases: [bp]
+permissions:
+  blockparty.use:
+    description: Permite usar o minigame BlockParty
+    default: true
+  blockparty.admin:
+    description: Permite usar comandos administrativos do BlockParty
+    default: op
+    children:
+      blockparty.setlobby: true
+      blockparty.setarena: true
+      blockparty.setspectator: true
+      blockparty.setsign: true
+      blockparty.start: true
+      blockparty.stop: true
+  blockparty.setlobby:
+    description: Permite definir o lobby do BlockParty (/blockparty setlobby)
+    default: op
+  blockparty.setarena:
+    description: Permite definir a arena do BlockParty (/blockparty setarena)
+    default: op
+  blockparty.setspectator:
+    description: Permite definir o local de espectadores (/blockparty setspectator)
+    default: op
+  blockparty.setsign:
+    description: Permite definir a placa de entrada (/blockparty setsign)
+    default: op
+  blockparty.start:
+    description: Permite iniciar uma partida do BlockParty (/blockparty start)
+    default: op
+  blockparty.stop:
+    description: Permite parar uma partida do BlockParty (/blockparty stop)
+    default: op
+
