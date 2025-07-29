@@ -1,4 +1,4 @@
-# 🎮 WBlockParty - Plugin de BlockParty para Minecraft
+# 🎮 WBlockParty 
 
 Um plugin elegante e robusto de BlockParty para servidores Minecraft Paper 1.21.4+.
 
