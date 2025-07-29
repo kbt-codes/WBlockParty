@@ -353,10 +353,6 @@ mvn clean package
 - **Documentação**: Consulte este README
 - **Configuração**: Use os arquivos YAML para personalizar
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
-
 ---
 
 **Desenvolvido com ❤️ para a comunidade Minecraft** 
