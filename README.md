@@ -324,29 +324,6 @@ mvn clean compile
 mvn clean package
 ```
 
-## 📝 Changelog
-
-### v3.3 - Sistema de Configuração Modular
-- ✅ **Configuração Dividida**: Arquivos separados por funcionalidade
-- ✅ **Sistema Robusto**: Validações e tratamento de erros
-- ✅ **Thread Safety**: Uso de estruturas thread-safe
-- ✅ **Cache Inteligente**: Performance otimizada
-- ✅ **Sistema de Estatísticas**: Contagem de vitórias e jogos
-- ✅ **Áudio Avançado**: Sons configuráveis e música
-- ✅ **Proteção de Dados**: Arquivo data.yml com avisos
-- ✅ **Documentação Completa**: README atualizado
-
-### v3.2 - Melhorias de Performance
-- ✅ Otimização de tasks
-- ✅ Sistema de cache
-- ✅ Limpeza automática
-
-### v3.1 - Funcionalidades Básicas
-- ✅ Sistema de partidas
-- ✅ Comandos básicos
-- ✅ Scoreboard
-- ✅ Sons e música
-
 ## 🤝 Suporte
 
 - **Issues**: Reporte bugs no GitHub
